@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /instructions/
+Disallow: /instructions/sleek-fusion/
+Disallow: /instructions/curl-fusion/
+Disallow: /instructions/prep-purify/
+Disallow: /instructions/elixir-serum/
+Disallow: /instructions/heatluxe/
+
+# Allow all other pages
+Allow: /
+
+# Sitemap location (if you have one)
+# Sitemap: https://yourdomain.com/sitemap.xml 

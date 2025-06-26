@@ -11,8 +11,11 @@ const config: Config = {
   theme: {
   	extend: {
       fontFamily: {
-        'sans': ['Montserrat', 'sans-serif'],
-        'display': ['Cormorant Garamond', 'serif'],
+        'sans': ['Inter', 'sans-serif'],
+        'heading': ['Playfair Display', 'serif'],
+        'subheading': ['DM Serif Display', 'serif'],
+        'body': ['Inter', 'sans-serif'],
+        'cta': ['Poppins', 'sans-serif'],
       },
   		colors: {
   			background: 'hsl(var(--background))',
@@ -66,8 +69,13 @@ const config: Config = {
   				ring: 'hsl(var(--sidebar-ring))'
   			},
         dorasilk: {
+          black: '#0A0A0A',
+          gold: '#C8A96B',
+          cream: '#F6F3EF',
+          white: '#FFFFFF',
+          beige: '#EDE3D4',
+          // Legacy colors for backward compatibility
           ivory: '#FDFBF7',
-          gold: '#D4AF37',
           'rose-gold': '#B76E79',
           champagne: '#F5E6D3',
           charcoal: '#2C2C2C',

@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
+  /* DORASILK Brand Colors */
+  --dorasilk-black: #0A0A0A;
+  --dorasilk-gold: #C8A96B;
+  --dorasilk-cream: #F6F3EF;
+  --dorasilk-white: #FFFFFF;
+  --dorasilk-beige: #EDE3D4;
+  
+  /* Legacy colors for backward compatibility */
   --dorasilk-ivory: #FDFBF7;
-  --dorasilk-gold: #D4AF37;
   --dorasilk-rose-gold: #B76E79;
   --dorasilk-champagne: #F5E6D3;
   --dorasilk-charcoal: #2C2C2C;
@@ -22,17 +29,53 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  color: var(--dorasilk-charcoal);
-  background: var(--dorasilk-ivory);
+  color: var(--dorasilk-black);
+  background: var(--dorasilk-cream);
 }
 
-.font-display {
-  font-family: 'Cormorant Garamond', serif;
+/* Typography Classes */
+.font-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
+
+.font-subheading {
+  font-family: 'DM Serif Display', serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-cta {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Brand Color Classes */
+.text-dorasilk-black { color: var(--dorasilk-black); }
+.text-dorasilk-gold { color: var(--dorasilk-gold); }
+.text-dorasilk-cream { color: var(--dorasilk-cream); }
+.text-dorasilk-white { color: var(--dorasilk-white); }
+.text-dorasilk-beige { color: var(--dorasilk-beige); }
+
+.bg-dorasilk-black { background-color: var(--dorasilk-black); }
+.bg-dorasilk-gold { background-color: var(--dorasilk-gold); }
+.bg-dorasilk-cream { background-color: var(--dorasilk-cream); }
+.bg-dorasilk-white { background-color: var(--dorasilk-white); }
+.bg-dorasilk-beige { background-color: var(--dorasilk-beige); }
+
+.border-dorasilk-black { border-color: var(--dorasilk-black); }
+.border-dorasilk-gold { border-color: var(--dorasilk-gold); }
+.border-dorasilk-cream { border-color: var(--dorasilk-cream); }
+.border-dorasilk-white { border-color: var(--dorasilk-white); }
+.border-dorasilk-beige { border-color: var(--dorasilk-beige); }
 
 /* Custom Animations */
 @keyframes fadeInUp {
