@@ -3,10 +3,10 @@ import { createClient } from '@/lib/supabase'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { sessionId: string } }
+  context: { params: Promise<{ sessionId: string }> }
 ) {
   try {
-    const { sessionId } = params
+    const { sessionId } = await context.params
     
     if (!sessionId) {
       return NextResponse.json(
@@ -33,7 +33,7 @@ export async function GET(
       .eq('stripe_session_id', sessionId)
       .single()
 
-    if (error) {
+    if (error || !order) {
       console.error('Error fetching order:', error)
       return NextResponse.json(
         { error: 'Order not found' },
@@ -49,4 +49,4 @@ export async function GET(
       { status: 500 }
     )
   }
-} 
+}
