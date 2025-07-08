@@ -24,9 +24,17 @@ CREATE TABLE IF NOT EXISTS orders (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
+-- Create newsletter_signups table
+CREATE TABLE IF NOT EXISTS newsletter_signups (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  email TEXT NOT NULL UNIQUE,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
 -- Enable Row Level Security
 ALTER TABLE products ENABLE ROW LEVEL SECURITY;
 ALTER TABLE orders ENABLE ROW LEVEL SECURITY;
+ALTER TABLE newsletter_signups ENABLE ROW LEVEL SECURITY;
 
 -- Create policies
 CREATE POLICY "Products are publicly readable" ON products
@@ -37,3 +45,6 @@ CREATE POLICY "Orders can be inserted by anyone" ON orders
 
 CREATE POLICY "Orders can be updated by anyone" ON orders
   FOR UPDATE USING (true);
+
+CREATE POLICY "Anyone can insert newsletter signups" ON newsletter_signups
+  FOR INSERT WITH CHECK (true);

@@ -6,13 +6,14 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { ProductsSection } from "@/components/products-section"
+import { NewsletterLaunch } from "@/components/newsletter-launch"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Banner */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dorasilk-black">
-        {/* Background Pattern */}
+      {/* <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-dorasilk-black">
+      
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-32 h-32 border border-dorasilk-gold rounded-full"></div>
           <div className="absolute top-40 right-32 w-24 h-24 border border-dorasilk-gold rounded-full"></div>
@@ -52,7 +53,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Trust Indicators */}
+       
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
               <div className="text-center">
                 <div className="text-4xl mb-4">✨</div>
@@ -73,16 +74,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
+  
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-dorasilk-gold rounded-full flex justify-center">
             <div className="w-1 h-3 bg-dorasilk-gold rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Problem-Solution Hook */}
-      <section className="py-24 bg-dorasilk-white">
+
+
+    
+      {/* <section className="py-24 bg-dorasilk-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -142,7 +145,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Before/After Visual Placeholder */}
+         
             <div className="mt-16 text-center">
               <div className="bg-dorasilk-cream p-12 rounded-3xl">
                 <h3 className="text-2xl font-subheading text-dorasilk-black mb-6">See the Transformation</h3>
@@ -164,10 +167,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* 3-Step Ritual */}
-      <section id="how-it-works" className="py-24 bg-dorasilk-cream">
+    
+      {/* <section id="how-it-works" className="py-24 bg-dorasilk-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -241,10 +244,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Emotional Testimonial Block */}
-      <section className="py-24 bg-dorasilk-white">
+
+      {/* <section className="py-24 bg-dorasilk-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-dorasilk-cream p-8 md:p-12 rounded-3xl shadow-xl">
@@ -270,10 +273,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* About Section */}
-      <section id="about" className="py-24 bg-dorasilk-cream">
+     
+      {/* <section id="about" className="py-24 bg-dorasilk-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -323,7 +326,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Emotional Hook Story */}
+           
             <div className="bg-dorasilk-white p-8 md:p-12 rounded-3xl shadow-xl">
               <h3 className="text-2xl font-subheading text-dorasilk-black mb-6 text-center">Our Story</h3>
               <p className="text-lg text-dorasilk-black leading-relaxed text-center max-w-4xl mx-auto font-body">
@@ -335,10 +338,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Founder Message */}
-      <section className="py-24 bg-dorasilk-white">
+     
+      {/* <section className="py-24 bg-dorasilk-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-12">
@@ -365,13 +368,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      {/* Products Section */}
-      <ProductsSection />
+    
+      {/* <ProductsSection /> */}
 
-      {/* Transformations Section */}
-      <section className="py-24 bg-dorasilk-black text-dorasilk-white">
+   
+      {/* <section className="py-24 bg-dorasilk-black text-dorasilk-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-heading mb-6 text-dorasilk-white">Transformations</h2>
@@ -406,9 +409,10 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
+      <NewsletterLaunch />
       <footer className="bg-dorasilk-black text-dorasilk-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
