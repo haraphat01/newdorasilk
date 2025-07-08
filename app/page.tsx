@@ -459,7 +459,7 @@ export default function Home() {
 
             <div className="border-t border-dorasilk-white/20 pt-8 text-center">
               <p className="text-dorasilk-white/50 font-body">
-                © 2024 Dorasilk. All rights reserved. The Science of Hair Revamp.
+                © 2025 Dorasilk. All rights reserved. The Science of Hair Revamp.
               </p>
             </div>
           </div>
