@@ -84,7 +84,7 @@ export default function Home() {
 
 
 
-    
+
       {/* <section className="py-24 bg-dorasilk-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -169,7 +169,7 @@ export default function Home() {
         </div>
       </section> */}
 
-    
+
       {/* <section id="how-it-works" className="py-24 bg-dorasilk-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -275,7 +275,7 @@ export default function Home() {
         </div>
       </section> */}
 
-     
+
       {/* <section id="about" className="py-24 bg-dorasilk-cream">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
@@ -340,7 +340,7 @@ export default function Home() {
         </div>
       </section> */}
 
-     
+
       {/* <section className="py-24 bg-dorasilk-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -370,10 +370,10 @@ export default function Home() {
         </div>
       </section> */}
 
-    
+
       {/* <ProductsSection /> */}
 
-   
+
       {/* <section className="py-24 bg-dorasilk-black text-dorasilk-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto text-center">
@@ -417,14 +417,14 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-4 gap-8 mb-12">
-              <div>
+              {/* <div>
                 <h3 className="text-2xl font-heading mb-4 text-dorasilk-white">Dorasilk</h3>
                 <p className="text-dorasilk-white/70 leading-relaxed font-body">
                   The Science of Hair Revamp. Premium wig care products for the modern woman.
                 </p>
-              </div>
-              
-              <div>
+              </div> */}
+
+              {/* <div>
                 <h4 className="text-lg font-subheading mb-4 text-dorasilk-white">Products</h4>
                 <ul className="space-y-2 text-dorasilk-white/70 font-body">
                   <li>Sleek Fusion Treatment™</li>
@@ -433,8 +433,8 @@ export default function Home() {
                   <li>Elixir Serum by Dorasilk™</li>
                   <li>Heatluxe™</li>
                 </ul>
-              </div>
-              
+              </div> */}
+
               <div>
                 <h4 className="text-lg font-subheading mb-4 text-dorasilk-white">Support</h4>
                 <ul className="space-y-2 text-dorasilk-white/70 font-body">
@@ -445,7 +445,7 @@ export default function Home() {
                   <li>Product Verification</li>
                 </ul>
               </div>
-              
+
               <div>
                 <h4 className="text-lg font-subheading mb-4 text-dorasilk-white">Connect</h4>
                 <ul className="space-y-2 text-dorasilk-white/70 font-body">
@@ -456,7 +456,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            
+
             <div className="border-t border-dorasilk-white/20 pt-8 text-center">
               <p className="text-dorasilk-white/50 font-body">
                 © 2024 Dorasilk. All rights reserved. The Science of Hair Revamp.
